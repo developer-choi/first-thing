@@ -1,2 +1,2 @@
-export {default as SpecialButton} from './components/SpecialButton.tsx';
+export {default as SpecialButton} from './components/SpecialButton';
 export {add} from './utils/calculator.ts';
