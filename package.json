@@ -1,7 +1,7 @@
 {
   "name": "@devchoe/first-thing",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,13 +11,6 @@
   },
   "main": "dist/first-thing.umd.js",
   "module": "dist/first-thing.js",
-  "exports": {
-    ".": {
-      "import": "./dist/first-thing.js",
-      "require": "./dist/first-thing.umd.js"
-    },
-    "./style.css": "./dist/first-thing.css"
-  },
   "files": [
     "dist"
   ],
