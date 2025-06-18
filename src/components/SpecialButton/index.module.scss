@@ -1,3 +1,6 @@
+@use "/src/styles/common.module";
+
 .special {
+  @include common.text;
   background: lightcoral;
 }
