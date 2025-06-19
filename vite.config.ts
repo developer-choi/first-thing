@@ -3,6 +3,7 @@ import {fileURLToPath} from 'node:url';
 import {defineConfig} from 'vite';
 import {viteStaticCopy} from 'vite-plugin-static-copy';
 import path from 'path';
+import dts from 'vite-plugin-dts'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -33,6 +34,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    dts(),
     viteStaticCopy({
       targets: [
         {
