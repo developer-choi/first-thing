@@ -1,7 +1,7 @@
 {
   "name": "@devchoe/first-thing",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,7 @@
   },
   "main": "dist/first-thing.umd.js",
   "module": "dist/first-thing.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
