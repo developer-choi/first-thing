@@ -34,7 +34,10 @@ export default defineConfig({
     },
   },
   plugins: [
-    dts({tsconfigPath: './tsconfig.app.json'}),
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      rollupTypes: true
+    }),
     viteStaticCopy({
       targets: [
         {
