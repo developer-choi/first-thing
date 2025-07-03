@@ -4,6 +4,7 @@ import {defineConfig} from 'vite';
 import {viteStaticCopy} from 'vite-plugin-static-copy';
 import path from 'path';
 import dts from 'vite-plugin-dts'
+import preserveDirectives from 'rollup-preserve-directives';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -46,5 +47,6 @@ export default defineConfig({
         },
       ],
     }),
+    preserveDirectives() // https://github.com/vitejs/vite/discussions/15721
   ]
 });
