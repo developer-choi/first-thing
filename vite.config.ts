@@ -16,7 +16,10 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: {
+        index: resolve(__dirname, 'src/index.ts'),
+        client: resolve(__dirname, 'src/client.ts'),
+      },
       name: 'FirstThing',
       // the proper extensions will be added
       fileName: 'first-thing',
