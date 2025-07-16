@@ -20,20 +20,13 @@ export default defineConfig({
         index: resolve(__dirname, 'src/index.ts'),
         client: resolve(__dirname, 'src/client.ts'),
       },
-      name: 'FirstThing',
-      // the proper extensions will be added
-      fileName: 'first-thing',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ['react'],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        globals: {
-          vue: 'React',
-        },
+        format: 'esm',
         entryFileNames: '[name].js', // 출력 파일 이름을 지정합니다.
       },
     },
