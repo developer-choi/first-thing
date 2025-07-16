@@ -20,14 +20,16 @@ export default defineConfig({
         index: resolve(__dirname, 'src/index.ts'),
         client: resolve(__dirname, 'src/client.ts'),
       },
+      formats: ['es']
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ['react'],
       output: {
-        format: 'esm',
-        entryFileNames: '[name].js', // 출력 파일 이름을 지정합니다.
+        globals: {
+          vue: 'React',
+        },
       },
     },
   },

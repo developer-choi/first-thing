@@ -1,7 +1,7 @@
 {
   "name": "@devchoe/first-thing",
   "private": false,
-  "version": "0.0.30",
+  "version": "0.0.21",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,20 +12,12 @@
     "build-storybook": "storybook build",
     "deploy": "tsc -b && vite build && npm publish"
   },
+  "main": "dist/first-thing.umd.js",
+  "module": "dist/first-thing.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./client": {
-      "import": "./dist/client.js",
-      "types": "./dist/client.d.ts"
-    },
-    "./styles/common.module.scss": "./dist/styles/common.module.scss"
-  },
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
