@@ -4,5 +4,6 @@ export {default as ThirdButton} from './components/ThirdButton';
 export {default as NonDirectiveClientComponent} from './components/NonDirectiveClientComponent';
 export {default as DirectiveClientComponent} from './components/DirectiveClientComponent';
 export {default as NonDirectiveClientComponent2} from './components/NonDirectiveClientComponent2';
-export {add} from './utils/calculator.ts';
-export * from './utils/format.ts';
+export {add} from './utils/calculator';
+export * from './utils/format';
+export * from './utils/something';
