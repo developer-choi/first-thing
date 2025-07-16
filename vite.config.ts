@@ -34,6 +34,7 @@ export default defineConfig({
         globals: {
           vue: 'React',
         },
+        entryFileNames: '[name].js', // 출력 파일 이름을 지정합니다.
       },
     },
   },
